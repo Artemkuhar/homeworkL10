@@ -1,0 +1,389 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.nameSection, .nameSection6{
+	text-align: center;
+	width: 600px;
+	background-color: yellow;
+	margin: 0 auto;
+
+}
+.block1, .block2, .block3, .block4{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border:1px black solid;
+	/*line-height: 100px;*/
+	text-align: center;
+	font-size: 40px;
+}
+.section1{
+	width: 600px;
+	height: 200px;
+	background-color: #eee;
+	margin: 0 auto;
+	display: flex;	
+	align-items: center;
+	justify-content: space-around;
+	animation-name:anim1;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	opacity: 0;
+
+}
+.section2{
+	width: 600px;
+	height: 200px;
+	background-color: #eee;
+	margin: 0 auto;
+	display: flex;	
+	align-items: center;
+	justify-content: space-around;
+	animation-name:anim2;
+	animation-duration: 3s;
+	animation-delay: 3s;
+	animation-iteration-count: 1;
+	opacity: 0;
+
+}
+.section3{
+	width: 600px;
+	height: 200px;
+	background-color: #eee;
+	margin: 0 auto;
+	display: flex;	
+	align-items: center;
+	justify-content: space-around;
+	animation-name:anim3;
+	animation-duration: 3s;
+	animation-delay: 6s;
+	animation-iteration-count: 1;
+	flex-wrap: nowrap;
+	opacity: 0;
+
+}
+.section4{
+	width: 600px;
+	height: 200px;
+	background-color: #eee;
+	margin: 0 auto;
+	display: flex;	
+	align-items: center;
+	justify-content: space-around;
+	animation-name:anim4;
+	animation-duration: 3s;
+	animation-delay: 9s;
+	animation-iteration-count: 1;
+	flex-wrap: wrap;
+	opacity: 0;
+
+}
+.section5{
+	width: 400px;
+	height: 400px;
+	background-color: #eee;
+	margin: 0 auto;
+	display: flex;	
+	animation-name:anim5;
+	animation-duration: 3s;
+	animation-delay: 12s;
+	animation-iteration-count: 1;
+	flex-wrap: wrap;
+	opacity: 0;
+
+}
+
+@keyframes anim1{
+	0%{
+		justify-content: space-around;
+		opacity: 1;
+	}
+	25%{
+		justify-content: center;
+		opacity: 1;
+		}
+	50%{
+		justify-content: flex-start;
+		opacity: 1;
+	}
+	75%{
+		justify-content: flex-end;
+		opacity: 1;
+	}
+	100%{
+		justify-content: space-around;
+		opacity: 1;
+		
+	}
+}
+@keyframes anim2{
+	0%{
+		align-items: center;
+		opacity: 1;
+	}
+	25%{
+		align-items: flex-start;
+		opacity: 1;
+		}
+	50%{
+		align-items: flex-end;
+		opacity: 1;
+	}
+	100%{
+		align-items: center;
+		opacity: 1;
+	}
+}
+@keyframes anim3{
+	0%{
+		flex-direction: row;
+		
+		opacity: 1;
+	}
+	25%{
+		flex-direction: row-reverse;
+
+		opacity: 1;
+		}
+	50%{
+		flex-direction: column;
+		opacity: 1;
+	}
+	100%{
+		flex-direction: column-reverse;
+		opacity: 1;
+
+	}
+}
+@keyframes anim4{
+	0%{
+		width: 600px;
+		opacity: 1;
+	}
+	25%{
+		width: 500px;
+		opacity: 1;
+		}
+	50%{
+		width: 400px;
+		opacity: 1;
+	}
+	100%{
+		width: 600px;
+		opacity: 1;
+	}
+
+}
+@keyframes anim5{
+	0%{
+		align-content: flex-start;
+		opacity: 1;
+	}
+	20%{
+		align-content: center;
+		opacity: 1;
+		}
+	40%{
+		align-content: flex-end;
+		opacity: 1;
+	}
+	60%{
+		align-content: space-between;
+		opacity: 1;
+	}
+	80%{
+		align-content: space-around;
+		opacity: 1;
+	}
+	90%{
+		align-content: stretch;
+		opacity: 1;
+	}
+	100%{
+		align-content: flex-start;
+		opacity: 1;
+	}
+
+}
+
+/*section6*/
+
+@keyframes anim36{
+	0%{
+		flex-direction: row;
+		background-color: green;
+		opacity: 1;
+	}
+	25%{
+		flex-direction: row-reverse;
+		background-color: blue;
+		opacity: 1;
+		}
+	50%{
+		flex-direction: column;
+		opacity: 1;
+	}
+	100%{
+		flex-direction: column-reverse;
+		opacity: 1;
+
+	}
+}
+@keyframes anim46{
+	0%{
+		width: 600px;
+		opacity: 1;
+	}
+	25%{
+		width: 500px;
+		opacity: 1;
+		}
+	50%{
+		width: 400px;
+		opacity: 1;
+		flex-wrap: wrap;
+	}
+	100%{
+		width: 600px;
+		opacity: 1;
+	}
+
+}
+@keyframes anim5{
+	0%{
+		align-content: flex-start;
+		width: 400px;
+		flex-wrap: wrap;
+		opacity: 1;
+	}
+	20%{
+		align-content: center;
+		width: 400px;
+		flex-wrap: wrap;
+		opacity: 1;
+		}
+	40%{
+		align-content: flex-end;
+		width: 400px;
+		flex-wrap: wrap;
+		opacity: 1;
+	}
+	60%{
+		align-content: space-between;
+		width: 400px;
+		flex-wrap: wrap;
+		opacity: 1;
+	}
+	80%{
+		align-content: space-around;
+		width: 400px;
+		opacity: 1;
+		flex-wrap: wrap;
+	}
+	90%{
+		align-content: stretch;
+		width: 400px;
+		flex-wrap: wrap;
+		opacity: 1;
+	}
+	100%{
+		align-content: flex-start;
+		width: 400px;
+		flex-wrap: wrap;
+		opacity: 1;
+	}
+
+}
+.section6{
+	width: 600px;
+	height: 400px;
+	background-color: #eee;
+	margin: 0 auto;
+	display: flex;	
+	align-items: center;
+	justify-content: space-around;
+	animation: anim1 5s 1  15s, anim2 5s 1  20s, anim36 5s 1  25s, anim46 5s 1  30s, anim5 5s 1  35s;
+	opacity: 0;
+}
+/*ЗАГОЛОВОК меняет текст*/
+.nameSection6>h1:before{
+	content: "justify-content";
+	animation: text1 5s 1  15s, text2 5s 1  20s, text3 5s 1  25s, text4 5s 1  30s, text5 5s 1  35s;
+
+	
+}
+@keyframes text1{
+	0%{
+		content: "justify-content";
+	}
+	100%{
+		content: "justify-content";
+	}
+
+}
+@keyframes text2{
+	0%{
+		content: "align-items";
+	}
+	100%{
+		content: "align-items";
+	}
+
+}
+@keyframes text3{
+	0%{
+		content: "flex-direction";
+	}
+	100%{
+		content: "flex-direction";
+	}
+
+}
+@keyframes text4{
+	0%{
+		content: "sectionWidth";
+	}
+	100%{
+		content: "sectionWidth";
+	}
+
+}
+@keyframes text5{
+	0%{
+		content: "align-content";
+	}
+	99%{
+		content: "align-content";
+	}
+	100%{
+		content: "justify-content";
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
